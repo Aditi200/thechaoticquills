@@ -1,0 +1,55 @@
+header
+{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/home.jpeg);
+	height: 100vh;
+	background-size:cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+#iconbtn
+{
+	background-color: #8d93ab;
+}
+.navbar-nav .nav-link{
+	position: relative;
+	color: #87431d;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 10px;
+
+	transition:.5s;
+	margin: 10px;
+}
+.nav-link:before, .nav-link:after
+{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 3px;
+	background-color:#87431d;
+	transition: .5s;
+	opacity: 0;
+}
+.navbar-nav .nav-link:before
+{
+top:0;
+left:0;
+}
+.navbar-nav .nav-link:after
+{
+bottom:0;
+right:0;
+}
+.nav-link:hover:before, .nav-link:hover:after{
+	opacity: 1;
+	width: 100%;
+	color: #d6e0f0;
+	transition: .5s;
+}
+h1
+{
+	text-align: center;
+	color: #cd0a0a;
+	font-size: 100px;
+}
