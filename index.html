@@ -11,11 +11,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://kit.fontawesome.com/1ce0a86f27.js" crossorigin="anonymous"></script>
+ 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script>
+<script>
 $(document).ready(function(){
-  $("#body").mouseenter(function(){
-    $("#div1").delay(1).fadeIn();
+  $("#iconbtn").click(function(){
+    $(".navbar").css("background-color","rgba(6, 12, 34, 0.9)");
+  });
+   $("#iconbtn").click(function(){
+    $(".navbar").css("background-color","rgba(0,0,0,0.7)");
   });
 });
 </script>
@@ -66,9 +70,9 @@ $(document).ready(function(){
   </div>  
 </nav>
 <section id="home">
-	<div id="div1" style="display: none;margin-top: 200px;">
+	<div id="div1" style="margin-top: 200px;" >
 		<h1>THE CHAOTICQUILLS</h1>
-		<i class="fas fa-play-circle"></i>
+		<i id="i1"class="fas fa-play-circle"></i>
 	</div>	
 </section>
 </header>
